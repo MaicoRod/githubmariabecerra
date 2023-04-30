@@ -1,5 +1,6 @@
-.h2Col {
-    color: #73141B;
+.mainColaboraciones{
+    .h2Col {
+    color: $letras;
     text-decoration: underline;
 }
 
@@ -12,6 +13,9 @@
     width: 600px;
     height: 600px;
 }
+}
+
+
 
 @media (max-width: 780px){
     .imgCol {

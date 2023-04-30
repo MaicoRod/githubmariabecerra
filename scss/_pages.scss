@@ -4,6 +4,9 @@ header{
         height: 60px;
         display: flex;
         flex-direction: row-reverse;
+        .menu{
+            display: none;
+        }
         
                 ul{
                 li {
@@ -15,6 +18,7 @@ header{
                         display: block;
                         padding: 10px;
                         color: $letras;
+                        font-family: $titulo;
                             &:hover{
                                 color: $hover;
                             }
@@ -44,11 +48,11 @@ header{
 
 main {
     background-color: $fondo;
-    h1 {
-    font-family: $titulo;
+    h1{
+        font-family:"Prompt", sans-serif; ;
     }
     p {
-        font-family: 'Roboto', sans-serif;
+        font-family: $contenido;
         font-size: 25px;
     }
 }
@@ -74,94 +78,71 @@ footer {
 
 }
 
-// @media (max-width: 768px) {
+ @media (max-width: 768px) {
 
-//     nav{
-//         .fa-solid {
-//         display: block;
-//         font-size: 30px;
-//         margin: 15px;
-//         color: #73141B;
-//             &:hover + ul {
-//                 top:0;
-//             }
-//         }
-//         ul { 
-//             position: absolute;
-//             flex-direction: column;
-//             background-color: #DDE5BE;
-//             width: 190px;
-//             height: 400px;
-//             padding-top: 60px;
-//             align-items: center;
-//             top: -500px;
-//             transition: 0.2s;
-//              a{
-//              font-size: 15px;
-//             }
-//             &:hover{
-//                 top:0;
-//             }
-//         }
-//         .logo {
-//             position: absolute;
-//         }
-//         .h2nav{
-//             display: none;
-//         }
-//     }
+   nav{
+       .menu {
+        display: block;
+        font-size: 30px;
+        margin: 15px;
+         color: #73141B;
+             &:hover{
+                 top:0;
+             }
+         }
+         ul { 
+             position: absolute;
+             flex-direction: column;
+             background-color: #DDE5BE;
+             width: 190px;
+             height: 400px;
+             padding-top: 60px;
+             align-items: center;
+             top: -500px;
+             transition: 0.2s;
+              a{
+              font-size: 15px;
+             }
+             &:hover{
+                top:0;
+             }
+         }
+         .logo {
+            position: absolute;
+         }
+         .h2nav{
+             display: none;
+         }
+     }
 
-//     footer {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: space-around;
-//     }
-//     }
+     footer {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+     }
+     }
 
-// @media (max-width: 320px){
+ @media (max-width: 320px){
 
-//     nav ul{
-//         right: 500px;
-//         width: 190px;
-//         height: 400px;
-//         padding-top: 60px;
-//         right: -500px;
-//         transition: 0.2s;
-//     }
+     nav{
+        ul{
+         right: 500px;
+        width: 190px;
+         height: 400px;
+         padding-top: 60px;
+         right: -500px;
+        transition: 0.2s;
+    }
+     .logo {
+         width: 20px;
+         height: 20px;
+         margin: 5px;
+         left: 5px;
+         position: relative;
+     }
+    .h2nav{
+            display: none;
+        }
+    } 
 
-//     nav .fa-solid:hover + ul{
-//         right: 0;
-//     }
-
-//     nav ul:hover {
-//         right: 0;
-//     }
-
-//     .logo {
-//         width: 20px;
-//         height: 20px;
-//         margin: 5px;
-//         left: 5px;
-//         position: relative;
-//     }
-
-//     .h2nav{
-//         display: none;
-//     }
-//     .logo {
-//         width: 20px;
-//         height: 20px;
-//         margin: 5px;
-//         left: 5px;
-//     }
-
-//     .h2nav{
-//         display: none;
-//     }
-
-//     .imgIndex {
-//         width: 100%;
-//         height: 500px;
-//         margin: 16px;
-//     }
-// }
+ }

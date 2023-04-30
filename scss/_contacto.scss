@@ -1,0 +1,86 @@
+.mainContactos{
+    .h1Contacto {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.pContacto{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.formulario {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    padding: 50px;
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        border: solid 3px;
+        color: $letras;
+        padding: 20px;
+    }
+        .fuenteContacto {
+            font-family: $titulo;
+            font-size: 15px;
+            color: black;
+        }
+            .tya {
+                padding: 10px;
+                text-align: center;
+            }
+}
+}
+
+
+@media (max-width: 780px){
+.mainContactos {
+        .h1Contacto {
+            padding-top: 0;
+        }
+        .pContacto{
+            padding-top: 0;
+        }
+        .formulario{
+            padding: 10px;
+            textarea {
+            height: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+.mainContactos{
+        .h1Contacto {
+        padding-top: 0;
+    }
+
+    .pContacto {
+        padding: 0;
+    }
+
+    .formulario {
+        width: 250px;
+        height:500px;
+        margin: 0;
+        padding: 0;
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 10px;
+        }
+
+     textarea {
+            width: 300px;
+            height: 100px;
+        }
+
+        .tya {
+            padding: 5px;
+        }
+    }   
+}
+
+}

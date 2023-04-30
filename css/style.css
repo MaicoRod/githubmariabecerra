@@ -1,9 +1,14 @@
 /*Variables*/
-@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;1,200&family=Roboto:wght@400;700&display=swap");
+@import url(./font/Prompt-Black.ttf);
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;1,200&family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Prompt", sans-serif; }
+
+@font-face {
+  font-family: "Prompt", sans-serif;
+  src: url(./font/Prompt-Black.ttf); }
 
 /*Paginas*/
 header nav {
@@ -11,6 +16,8 @@ header nav {
   height: 60px;
   display: flex;
   flex-direction: row-reverse; }
+  header nav .menu {
+    display: none; }
   header nav ul li {
     list-style: none;
     margin: 10px;
@@ -19,7 +26,8 @@ header nav {
       text-decoration: none;
       display: block;
       padding: 10px;
-      color: #73141B; }
+      color: #73141B;
+      font-family: "Prompt", sans-serif; }
       header nav ul li a:hover {
         color: black; }
   header nav .h2nav {
@@ -40,7 +48,7 @@ main {
   main h1 {
     font-family: "Prompt", sans-serif; }
   main p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 25px; }
 
 footer {
@@ -58,6 +66,54 @@ footer {
       text-decoration: none; }
       footer a .redes:hover {
         color: black; }
+
+@media (max-width: 768px) {
+  nav .menu {
+    display: block;
+    font-size: 30px;
+    margin: 15px;
+    color: #73141B; }
+    nav .menu:hover {
+      top: 0; }
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    background-color: #DDE5BE;
+    width: 190px;
+    height: 400px;
+    padding-top: 60px;
+    align-items: center;
+    top: -500px;
+    transition: 0.2s; }
+    nav ul a {
+      font-size: 15px; }
+    nav ul:hover {
+      top: 0; }
+  nav .logo {
+    position: absolute; }
+  nav .h2nav {
+    display: none; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; } }
+
+@media (max-width: 320px) {
+  nav ul {
+    right: 500px;
+    width: 190px;
+    height: 400px;
+    padding-top: 60px;
+    right: -500px;
+    transition: 0.2s; }
+  nav .logo {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    left: 5px;
+    position: relative; }
+  nav .h2nav {
+    display: none; } }
 
 /*Index*/
 .mainIndex .portada {
@@ -80,7 +136,7 @@ footer {
   padding: 10px; }
 
 .mainIndex .imgIndex {
-  height: auto; }
+  height: 500px; }
 
 .mainIndex .gridIindex {
   grid-area: img; }
@@ -105,7 +161,8 @@ footer {
     margin: auto; }
   .mainIndex .imgIndex {
     width: 100%;
-    height: 250px; } }
+    height: 250px;
+    margin: 16px; } }
 
 @media (max-width: 320px) {
   .imgIndex {
@@ -144,15 +201,15 @@ footer {
     width: 100%; } }
 
 /*Colaboraciones*/
-.h2Col {
+.mainColaboraciones .h2Col {
   color: #73141B;
   text-decoration: underline; }
 
-.collage {
+.mainColaboraciones .collage {
   width: 100%;
   height: 1000px; }
 
-.imgCol {
+.mainColaboraciones .imgCol {
   width: 600px;
   height: 600px; }
 
@@ -171,8 +228,64 @@ footer {
     font-size: 20px; } }
 
 /*Galeria*/
-.imgGaleria {
+.mainGaleria .imgGaleria {
   width: 300px;
   height: 300px; }
 
 /*Contacto*/
+.mainContactos .h1Contacto {
+  text-align: center;
+  padding-top: 50px; }
+
+.mainContactos .pContacto {
+  text-align: center;
+  padding-top: 20px; }
+
+.mainContactos .formulario {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  padding: 50px; }
+  .mainContactos .formulario fieldset {
+    display: flex;
+    flex-direction: column;
+    border: solid 3px;
+    color: #73141B;
+    padding: 20px; }
+  .mainContactos .formulario .fuenteContacto {
+    font-family: "Prompt", sans-serif;
+    font-size: 15px;
+    color: black; }
+  .mainContactos .formulario .tya {
+    padding: 10px;
+    text-align: center; }
+
+@media (max-width: 780px) {
+  .mainContactos .h1Contacto {
+    padding-top: 0; }
+  .mainContactos .pContacto {
+    padding-top: 0; }
+  .mainContactos .formulario {
+    padding: 10px; }
+    .mainContactos .formulario textarea {
+      height: 100px; } }
+
+@media (max-width: 320px) {
+  .mainContactos .h1Contacto {
+    padding-top: 0; }
+  .mainContactos .pContacto {
+    padding: 0; }
+  .mainContactos .formulario {
+    width: 250px;
+    height: 500px;
+    margin: 0;
+    padding: 0; }
+    .mainContactos .formulario fieldset {
+      border: none;
+      padding: 0;
+      margin: 10px; }
+    .mainContactos .formulario textarea {
+      width: 300px;
+      height: 100px; }
+    .mainContactos .formulario .tya {
+      padding: 5px; } }
