@@ -214,17 +214,17 @@ footer {
   height: 600px; }
 
 @media (max-width: 780px) {
-  .imgCol {
+  .mainColaboraciones .imgCol {
     width: 400px;
     height: 400px; } }
 
 @media (max-width: 320px) {
-  .collage {
+  .mainColaboraciones .collage {
     height: 300px; }
-  .imgCol {
+  .mainColaboraciones .imgCol {
     width: 200px;
     height: 200px; }
-  .fa-bounce {
+  .mainColaboraciones .fa-bounce {
     font-size: 20px; } }
 
 /*Galeria*/

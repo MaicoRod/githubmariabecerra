@@ -18,21 +18,27 @@
 
 
 @media (max-width: 780px){
-    .imgCol {
-        width: 400px;
-        height: 400px;
+ .mainColaboraciones{
+        .imgCol {
+            width: 400px;
+            height: 400px;
+        }
     }
+    
 }
 
 @media (max-width: 320px) {
-    .collage {
-        height: 300px;
+  .mainColaboraciones{
+        .collage {
+            height: 300px;
+        }
+        .imgCol {
+            width: 200px;
+            height: 200px;
+        }
+        .fa-bounce {
+            font-size: 20px;
+        }
     }
-    .imgCol {
-        width: 200px;
-        height: 200px;
-    }
-    .fa-bounce {
-        font-size: 20px;
-    }
+    
 }
