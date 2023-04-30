@@ -1,0 +1,34 @@
+.h2Col {
+    color: #73141B;
+    text-decoration: underline;
+}
+
+.collage {
+    width: 100%;
+    height: 1000px;
+}
+
+.imgCol {
+    width: 600px;
+    height: 600px;
+}
+
+@media (max-width: 780px){
+    .imgCol {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 320px) {
+    .collage {
+        height: 300px;
+    }
+    .imgCol {
+        width: 200px;
+        height: 200px;
+    }
+    .fa-bounce {
+        font-size: 20px;
+    }
+}
