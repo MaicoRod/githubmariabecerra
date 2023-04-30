@@ -125,13 +125,11 @@ footer {
   padding: 10px;
   margin: auto;
   justify-content: space-evenly; }
-
-.h1Albums {
-  text-align: center;
-  padding-bottom: 20px; }
-
-.card {
-  width: 20rem; }
+  .mainAlbums .h1Albums {
+    text-align: center;
+    padding-bottom: 20px; }
+  .mainAlbums .card {
+    width: 20rem; }
 
 @media (max-width: 780px) {
   .mainAlbums {
