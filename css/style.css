@@ -195,6 +195,14 @@ footer {
     padding-bottom: 20px;
     background-color: #DEB299;
     padding-top: 10px; }
+  .mainAlbums .h2Albums {
+    text-align: center;
+    font-family: "Prompt", sans-serif;
+    color: #73141B;
+    padding-bottom: 10px;
+    font-size: 30px; }
+  .mainAlbums .pAlbums {
+    padding: 5px; }
 
 @media (max-width: 780px) {
   .mainAlbums {
