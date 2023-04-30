@@ -79,7 +79,7 @@ footer {
     position: absolute;
     flex-direction: column;
     background-color: #DDE5BE;
-    width: 190px;
+    width: 180px;
     height: 400px;
     padding-top: 60px;
     align-items: center;
@@ -187,7 +187,9 @@ footer {
   margin: auto;
   justify-content: space-evenly; }
   .mainAlbums .card {
-    width: 100%; }
+    width: 50rem;
+    margin: 10px;
+    padding: 10px; }
   .mainAlbums .h1Albums {
     text-align: center;
     padding-bottom: 20px;
@@ -199,11 +201,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .card {
-    width: 100%; } }
+    .mainAlbums .card {
+      width: 30rem; } }
 
 @media (max-width: 320px) {
-  .card {
+  .mainAlbums .card {
     width: 100%; } }
 
 /*Colaboraciones*/

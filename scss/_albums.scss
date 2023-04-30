@@ -6,7 +6,9 @@
     margin: auto;
     justify-content: space-evenly;
     .card {
-        width: 100%;
+        width: 50rem;
+        margin: 10px;
+        padding: 10px;
     }
     .h1Albums {
         text-align: center;
@@ -25,15 +27,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
     .card {
-        width: 100%;
-     }
+        width: 30rem;
+    }
+}
+
+    
 }
 
 @media (max-width: 320px){
+  .mainAlbums{
     .card {
         width: 100%;
     }
+  }  
 }
