@@ -29,7 +29,8 @@ header nav {
       color: #73141B;
       font-family: "Prompt", sans-serif; }
       header nav ul li a:hover {
-        color: black; }
+        color: black;
+        background-color: #f1ded3; }
   header nav .h2nav {
     color: #73141B;
     margin: 10px;
@@ -64,8 +65,10 @@ footer {
     footer a .redes {
       color: #73141B;
       text-decoration: none; }
+      footer a .redes:visited {
+        color: #DEB299; }
       footer a .redes:hover {
-        color: black; }
+        color: gray; }
 
 @media (max-width: 768px) {
   header nav .menu {

@@ -21,7 +21,9 @@ header{
                         font-family: $titulo;
                             &:hover{
                                 color: $hover;
+                                background-color: lighten($color: $fondo, $amount: 15);
                             }
+                            
                     }
                 }
                 
@@ -49,7 +51,7 @@ header{
 main {
     background-color: $fondo;
     h1{
-        font-family:"Prompt", sans-serif; ;
+        font-family:$titulo;
     }
     p {
         font-family: $contenido;
@@ -68,11 +70,15 @@ footer {
         padding: 10px;
         margin: 10px;
             .redes {
-            color: $letras;
-            text-decoration: none;
-            &:hover{
-                color: $hover;
-            }
+                color: $letras;
+                text-decoration: none;
+                &:visited{
+                    color: $fondo;
+                }
+                &:hover{
+                    color: lighten($color: $hover, $amount: 50);
+                }
+            
             }
     }
 
@@ -85,7 +91,7 @@ header{
         display: block;
         font-size: 30px;
         margin: 15px;
-         color: #73141B;
+         color: $letras;
              &:hover + ul{
                  top:0;
              }
@@ -93,7 +99,7 @@ header{
          ul { 
              position: absolute;
              flex-direction: column;
-             background-color: #DDE5BE;
+             background-color: $secciones;
              width: 180px;
              height: 400px;
              padding-top: 60px;
