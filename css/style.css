@@ -96,10 +96,10 @@ footer {
     position: absolute; }
   header nav .h2nav {
     display: none; }
-  header footer {
+  footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; } }
+    justify-content: space-between; } }
 
 @media (max-width: 320px) {
   header nav .menu:hover + ul {
@@ -119,7 +119,13 @@ footer {
     margin: 5px;
     left: 5px; }
   header nav .menu .h2nav {
-    display: none; } }
+    display: none; }
+  footer {
+    height: 200px;
+    justify-content: space-around;
+    padding: 4rem; }
+    footer .redes {
+      margin-top: 10px; } }
 
 /*Index*/
 .mainIndex .portada {
@@ -177,10 +183,7 @@ footer {
   h1 {
     font-size: 20px; }
   p {
-    font-size: 15px; }
-  footer {
-    height: 200px;
-    justify-content: center; } }
+    font-size: 15px; } }
 
 /*Albums*/
 .mainAlbums {
@@ -222,31 +225,29 @@ footer {
     width: 100%; } }
 
 /*Colaboraciones*/
-.mainColaboraciones .h2Col {
+.mainColaboraciones__h2 {
   color: #73141B;
   text-decoration: underline; }
 
-.mainColaboraciones .collage {
+.mainColaboraciones__collage {
   width: 100%;
   height: 1000px; }
 
-.mainColaboraciones .imgCol {
-  width: 600px;
-  height: 600px; }
+.mainColaboraciones__img {
+  width: 500px;
+  height: 500px; }
 
 @media (max-width: 780px) {
-  .mainColaboraciones .imgCol {
+  .mainColaboraciones__img {
     width: 400px;
     height: 400px; } }
 
 @media (max-width: 320px) {
-  .mainColaboraciones .collage {
+  .mainColaboraciones__collage {
     height: 300px; }
-  .mainColaboraciones .imgCol {
+  .mainColaboraciones__img {
     width: 200px;
-    height: 200px; }
-  .mainColaboraciones .fa-bounce {
-    font-size: 20px; } }
+    height: 200px; } }
 
 /*Galeria*/
 .mainGaleria .imgGaleria {
@@ -254,59 +255,59 @@ footer {
   height: 300px; }
 
 /*Contacto*/
-.mainContactos .h1Contacto {
+.mainContacto__h1 {
   text-align: center;
   padding-top: 50px; }
 
-.mainContactos .pContacto {
+.mainContacto__p {
   text-align: center;
   padding-top: 20px; }
 
-.mainContactos .formulario {
+.mainContacto__formulario {
   width: 600px;
   height: 600px;
   margin: auto;
   padding: 50px; }
-  .mainContactos .formulario fieldset {
+  .mainContacto__formulario fieldset {
     display: flex;
     flex-direction: column;
     border: solid 3px;
     color: #73141B;
     padding: 20px; }
-  .mainContactos .formulario .fuenteContacto {
+  .mainContacto__formulario--fuente {
     font-family: "Prompt", sans-serif;
     font-size: 15px;
     color: black; }
-  .mainContactos .formulario .tya {
+  .mainContacto__formulario .tya {
     padding: 10px;
     text-align: center; }
 
 @media (max-width: 780px) {
-  .mainContactos .h1Contacto {
+  .mainContacto__h1 {
     padding-top: 0; }
-  .mainContactos .pContacto {
+  .mainContacto__p {
     padding-top: 0; }
-  .mainContactos .formulario {
+  .mainContacto__formulario {
     padding: 10px; }
-    .mainContactos .formulario textarea {
+    .mainContacto__formulario textarea {
       height: 100px; } }
 
 @media (max-width: 320px) {
-  .mainContactos .h1Contacto {
+  .mainContacto__h1 {
     padding-top: 0; }
-  .mainContactos .pContacto {
+  .mainContacto__p {
     padding: 0; }
-  .mainContactos .formulario {
+  .mainContacto__formulario {
     width: 250px;
     height: 500px;
     margin: 0;
     padding: 0; }
-    .mainContactos .formulario fieldset {
+    .mainContacto__formulario fieldset {
       border: none;
       padding: 0;
       margin: 10px; }
-    .mainContactos .formulario textarea {
+    .mainContacto__formulario textarea {
       width: 300px;
       height: 100px; }
-    .mainContactos .formulario .tya {
+    .mainContacto__formulario .tya {
       padding: 5px; } }
