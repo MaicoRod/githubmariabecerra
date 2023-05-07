@@ -182,8 +182,8 @@ footer {
     height: 300px; }
   h1 {
     font-size: 20px; }
-  p {
-    font-size: 15px; } }
+  .gridPindex {
+    font-size: 20px; } }
 
 /*Albums*/
 .mainAlbums {
