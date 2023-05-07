@@ -121,9 +121,9 @@ footer {
   header nav .menu .h2nav {
     display: none; }
   footer {
-    height: 200px;
+    height: 180px;
     justify-content: space-around;
-    padding: 3rem; }
+    padding: 2gitrem; }
     footer .redes {
       margin-top: 10px; } }
 
@@ -222,7 +222,13 @@ footer {
 
 @media (max-width: 320px) {
   .mainAlbums__card {
-    width: 100%; } }
+    width: 100%; }
+  .mainAlbums__h2 {
+    font-size: 25px; }
+  .mainAlbums__p {
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: center; } }
 
 /*Colaboraciones*/
 .mainColaboraciones__h2 {
@@ -231,11 +237,11 @@ footer {
 
 .mainColaboraciones__collage {
   width: 100%;
-  height: 1000px; }
+  height: 600px; }
 
 .mainColaboraciones__img {
   width: 500px;
-  height: 500px; }
+  height: 400px; }
 
 @media (max-width: 780px) {
   .mainColaboraciones__img {
@@ -296,7 +302,8 @@ footer {
   .mainContacto__h1 {
     padding-top: 0; }
   .mainContacto__p {
-    padding: 0; }
+    padding: 0;
+    font-size: 15px; }
   .mainContacto__formulario {
     width: 250px;
     height: 500px;
