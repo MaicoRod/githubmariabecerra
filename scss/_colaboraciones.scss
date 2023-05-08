@@ -4,16 +4,6 @@
     text-decoration: underline;
 }
 
-&__carousel{
-    width: 700px;
-    margin: auto;
-}
-
-.d-block{
-    width: 700px;
-    height: 500px;
-}
-
 &__img{
     width: 500px;
     height: 400px;
@@ -28,31 +18,19 @@
             width: 400px;
             height: 400px;
         }
-        &__carousel{
-            width: 400px;
-            margin: auto;
-        }
-        
-        .d-block{
-            height: 400px;
-        }
     }
 
 }
 
 @media (max-width: 320px) {
   .mainColaboraciones{
+        &__h2{
+            font-size: 30px;
+        }
+    
         &__img {
             width: 200px;
             height: 200px;
-        }
-        &__carousel{
-            width: 300px;
-            margin: auto;
-        }
-        
-        .d-block{
-            height: 300px;
         }
         
         &__p{

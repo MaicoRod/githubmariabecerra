@@ -235,14 +235,6 @@ footer {
   color: #73141B;
   text-decoration: underline; }
 
-.mainColaboraciones__carousel {
-  width: 700px;
-  margin: auto; }
-
-.mainColaboraciones .d-block {
-  width: 700px;
-  height: 500px; }
-
 .mainColaboraciones__img {
   width: 500px;
   height: 400px; }
@@ -250,22 +242,14 @@ footer {
 @media (max-width: 780px) {
   .mainColaboraciones__img {
     width: 400px;
-    height: 400px; }
-  .mainColaboraciones__carousel {
-    width: 400px;
-    margin: auto; }
-  .mainColaboraciones .d-block {
     height: 400px; } }
 
 @media (max-width: 320px) {
+  .mainColaboraciones__h2 {
+    font-size: 30px; }
   .mainColaboraciones__img {
     width: 200px;
     height: 200px; }
-  .mainColaboraciones__carousel {
-    width: 300px;
-    margin: auto; }
-  .mainColaboraciones .d-block {
-    height: 300px; }
   .mainColaboraciones__p {
     font-size: 20px; }
   .mainColaboraciones__icons {
