@@ -243,12 +243,12 @@ footer {
 
 @media (max-width: 420px) {
   .mainColaboraciones__h2 {
-    font-size: 30px; }
+    font-size: 25px; }
   .mainColaboraciones__img {
-    width: 200px;
-    height: 200px; }
+    width: 280px;
+    height: 300px; }
   .mainColaboraciones__p {
-    font-size: 20px; }
+    font-size: 18px; }
   .mainColaboraciones__icons {
     font-size: 20px; } }
 
