@@ -70,7 +70,7 @@ footer {
       footer a .redes:hover {
         color: gray; }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
   header nav .menu {
     display: block;
     font-size: 30px;
@@ -154,10 +154,7 @@ footer {
 .mainIndex .gridIindex {
   grid-area: img; }
 
-@media (max-width: 768px) {
-  .mainIndex .portada {
-    width: 400px;
-    height: 200px; }
+@media (max-width: 970px) {
   .mainIndex .gridIndex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -174,15 +171,15 @@ footer {
     margin: auto; }
   .mainIndex .imgIndex {
     width: 100%;
-    height: 250px; } }
+    height: 500px; } }
 
-@media (max-width: 320px) {
-  .imgIndex {
+@media (max-width: 420px) {
+  .mainIndex .imgIndex {
     width: 100%;
     height: 300px; }
-  h1 {
+  .mainIndex h1 {
     font-size: 20px; }
-  .gridPindex {
+  .mainIndex .gridPindex {
     font-size: 20px; } }
 
 /*Albums*/
@@ -212,7 +209,7 @@ footer {
     padding: 5px;
     font-family: "Roboto", sans-serif; }
 
-@media (max-width: 780px) {
+@media (max-width: 970px) {
   .mainAlbums {
     flex-direction: column;
     justify-content: center;
@@ -220,7 +217,7 @@ footer {
     .mainAlbums__card {
       width: 30rem; } }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   .mainAlbums__card {
     width: 100%; }
   .mainAlbums__h2 {
@@ -239,12 +236,12 @@ footer {
   width: 500px;
   height: 400px; }
 
-@media (max-width: 780px) {
+@media (max-width: 970px) {
   .mainColaboraciones__img {
     width: 400px;
     height: 400px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   .mainColaboraciones__h2 {
     font-size: 30px; }
   .mainColaboraciones__img {
@@ -288,7 +285,7 @@ footer {
     padding: 10px;
     text-align: center; }
 
-@media (max-width: 780px) {
+@media (max-width: 970px) {
   .mainContacto__h1 {
     padding-top: 0; }
   .mainContacto__p {
@@ -298,16 +295,17 @@ footer {
     .mainContacto__formulario textarea {
       height: 100px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   .mainContacto__h1 {
-    padding-top: 0; }
+    padding-top: 5px;
+    font-size: 22px; }
   .mainContacto__p {
     padding: 0;
     font-size: 15px; }
   .mainContacto__formulario {
-    width: 250px;
+    width: 300px;
     height: 500px;
-    margin: 0;
+    margin: auto;
     padding: 0; }
     .mainContacto__formulario fieldset {
       border: none;
