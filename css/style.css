@@ -255,7 +255,7 @@ footer {
 /*Galeria*/
 .mainGaleria .imgGaleria {
   width: 300px;
-  height: 300px; }
+  height: 400px; }
 
 /*Contacto*/
 .mainContacto__h1 {
@@ -305,7 +305,7 @@ footer {
   .mainContacto__formulario {
     width: 300px;
     height: 500px;
-    margin: auto;
+    margin: 0;
     padding: 0; }
     .mainContacto__formulario fieldset {
       border: none;
